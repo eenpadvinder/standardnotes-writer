@@ -1,0 +1,183 @@
+:root {
+  --background-1: #000;
+  --background-2: #000;
+  --foreground-1: #cfcfcf;
+  --foreground-2: #cfcfcf;
+  --foreground-3: #cfcfcf;
+  --highlight-color: #2c313a;
+  --neutral-color: #72767e;
+  --danger-color: #cc241d;
+  --success-color: #458588;
+  --warning-color: #d65d0e;
+  --border-color: #000;
+  /* Footer */
+  --footer-bar-border-top-color: 0;
+  --sn-stylekit-info-color: var(--highlight-color);
+  --sn-stylekit-info-contrast-color: var(--foreground-1);
+  --sn-stylekit-neutral-color: var(--neutral-color);
+  --sn-stylekit-neutral-contrast-color: var(--background-2);
+  --sn-stylekit-success-color: var(--success-color);
+  --sn-stylekit-success-contrast-color: var(--background-2);
+  --sn-stylekit-warning-color: var(--warning-color);
+  --sn-stylekit-warning-contrast-color: var(--background-2);
+  --sn-stylekit-danger-color: var(--danger-color);
+  --sn-stylekit-danger-contrast-color: var(--background-2);
+  --sn-stylekit-shadow-color: var(--background-2);
+  --sn-stylekit-background-color: var(--background-1);
+  --sn-stylekit-foreground-color: var(--foreground-1);
+  --sn-stylekit-border-color: var(--border-color);
+  --sn-stylekit-paragraph-text-color: var(--foreground-1);
+  --sn-stylekit-contrast-background-color: var(--background-2);
+  --sn-stylekit-contrast-foreground-color: var(--foreground-1);
+  --sn-stylekit-contrast-border-color: var(--border-color);
+  --sn-stylekit-secondary-background-color: var(--background-2);
+  --sn-stylekit-secondary-foreground-color: var(--foreground-2);
+  --sn-stylekit-secondary-border-color: var(--border-color);
+  --sn-stylekit-secondary-contrast-background-color: var(--background-1);
+  --sn-stylekit-secondary-contrast-foreground-color: var(--foreground-1);
+  --sn-stylekit-secondary-contrast-border-color: var(--border-color);
+  --sn-stylekit-editor-background-color: var(--background-1);
+  --sn-stylekit-editor-foreground-color: var(--foreground-1);
+  --sn-stylekit-input-placeholder-color: var(--foreground-2);
+  --sn-stylekit-input-border-color: var(--border-color);
+  --sn-stylekit-scrollbar-track-border-color: var(--border-color);
+  --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
+  --sn-desktop-titlebar-bg-color: var(--background-1);
+  --sn-desktop-titlebar-border-color: var(--border-color);
+  --sn-desktop-titlebar-ui-color: var(--foreground-1);
+  --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
+  /* Note flags */
+  /* Note selected */
+  /* Sidebar note properties: Dates, tags, etc. */
+  /* Workaround for subitems in Markdown lists not colored using StyleKit */
+  /* Progress bars */
+  /* Text selection color */
+  /* Use lighter blue for Minimal Markdown Editor sublists and other CodeMirror elements */
+}
+
+#tags-column {
+  display: none;
+}
+
+#notes-column {
+  flex-basis: 10px !important;
+}
+
+#notes-column:hover {
+  flex-basis: initial !important;
+}
+
+#editor-column {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-sections>.section:last-child,
+.sk-panel-column.meta,
+.sk-panel-column.sk-segmented-buttons
+{
+  display: none;
+}
+
+.sn-component .sk-panel-section:last-child,
+.sn-component .sk-panel-section {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#main-content {
+  padding: 10px;
+}
+
+#editor-pane-component-stack {
+  height: 40px;
+  opacity: 0.4;
+}
+
+.sn-component .sk-panel-row {
+  justify-content: center;
+}
+
+#editor-pane-component-stack #main-content  {
+}
+
+#editor-pane-component-stack #component-stack-menu-bar {
+  display: none;
+}
+
+.app, .app .section {
+  height: 100%;
+  max-height: 100%;
+}
+
+.main-ui-view > .ng-isolate-scope {
+  opacity: 0;
+  margin-top: -32px;
+}
+
+.main-ui-view > .ng-isolate-scope:hover {
+  opacity: 1;
+}
+
+#editor-title-bar,
+#editor-menu-bar {
+  display: none;
+}
+
+.CodeMirror, .CodeMirror-fullscreen, .gKsMQS, .gKsMQS p, .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like  {
+  font-family: Charter, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.gKsMQS h1:not(.placeholder)::before, 
+.gKsMQS h2:not(.placeholder)::before, 
+.gKsMQS h3:not(.placeholder)::before, 
+.gKsMQS h4:not(.placeholder)::before, 
+.gKsMQS h5:not(.placeholder)::before, 
+.gKsMQS h6:not(.placeholder)::before {
+  display: none;
+} 
+
+.CodeMirror .cm-header-1, .gKsMQS h1, 
+.CodeMirror .cm-header-2, .gKsMQS h2,
+.CodeMirror .cm-header-3, .gKsMQS h3,
+.CodeMirror .cm-header-4, .gKsMQS h4,
+.CodeMirror .cm-header-5, .gKsMQS h5,
+.CodeMirror .cm-header-6  .gKsMQS h6 {
+  font-weight: bold;
+} 
+
+.CodeMirror .cm-link.cm-variable-2, .CodeMirror .cm-url.cm-variable-2,
+.CodeMirror .cm-link, 
+.CodeMirror .cm-string,
+.editor-preview-active a, 
+.editor-preview-active-side a,
+.gKsMQS a {
+  color: #1d69cc !important;
+  text-decoration: none;
+}
+
+.CodeMirror-lines, .ProseMirror {
+  padding: 40px 0;
+}
+
+.gKsMQS mark {
+  background: #6b6105;
+  color: inherit;
+}
+
+a.heading-name {
+  color: inherit !important;
+}
+
+.editor-toolbar,
+.editor-toolbar.fullscreen {
+  height: 1px;
+  opacity: 0;
+  padding-top: 0;
+}
+
+.editor-toolbar:hover {
+  height: 50px;
+  opacity: 1;
+}

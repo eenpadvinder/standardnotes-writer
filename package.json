@@ -1,0 +1,12 @@
+{
+  "name": "standardnotes-writer",
+  "version": "0.1.0",
+  "main": "dist/dist.css",
+  "sn": {
+    "main": "dist/dist.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eenpadvinder/standardnotes-writer.git"
+  }
+}
